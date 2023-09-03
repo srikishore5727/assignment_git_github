@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment on Git and Github</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="ul">
+                <li><a id="home" href="#">Home</a></li>
+                <li><a id="about" href="#">About</a></li> 
+                <!-- <li><a id="service" href="#">Services</a></li> -->
+                <li><a id="contact" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1><a style="color: orange;">W</a>el<a style="color: orange;">c</a>om<a style="color: orange;">e</a> to <a style="color: orange;">O</a>ur <a style="color: orange;">W</a>ebsite</h1>
+        <p>Your go-to place for all your needs.</p>
+        <a href="#" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- <section class="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to providing top-notch services to our clients. </p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Service 1</h3>
+            <p>Description of Service 1.</p>
+        </div>
+        <div class="service">
+            <h3>Service 2</h3>
+            <p>Description of Service 2.</p>
+        </div>
+        <div class="service">
+            <h3>Service 3</h3>
+            <p>Description of Service 3.</p>
+        </div>
+    </section> -->
+    <section>
+        <div class="box">
+        <h1><b>Step 1: </b> Create a local git repository </h1> <br>
+        <p>mnelson:&nbsp;Desktop mnelson$ cd ~/Desktop <br>
+            mnelson:&nbsp;Desktop mnelson$ mkdir myproject <br>
+            mnelson:&nbsp;Desktop mnelson$ cd myproject/</p>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+        <h1><b>Step 2:</b> Add a new file to the repo</h1><br>
+        <p>mnelson:myproject mnelson$ touch mnelson.txt <br>
+            mnelson:myproject mnelson$ ls <br>
+            mnelson.txt</p>
+        </div>
+    </section>
+    <section >
+        <div class="box">
+        <h1><b>Step 3:</b> Add a file to the staging environment</h1><br>
+        <p>mnelson:myproject mnelson$ git status <br>
+            On branch master <br>
+            
+            Initial commit <br>
+            
+            Changes to be committed: <br>
+              (use "git rm --cached <file>..." to unstage) <br>
+            
+                new file:   mnelson.txt</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="box">
+        <h1><b>Step 4:</b> Create a commit</h1> <br>
+        <p>mnelson:myproject mnelson$ git commit -m "This is my first commit!" <br>
+            [master (root-commit) b345d9a] This is my first commit! <br>
+             1 file changed, 1 insertion(+) <br>
+             create mode 100644 mnelson.txt</p>
+        </div>
+    </section>
+    <section>
+        <div  class="box">
+        <h1><b>Step 5:</b> Create a new branch</h1> <br>
+        <p>mnelson:myproject mnelson$ git branch <br>
+            master <br>
+          * my-new-branch</p>
+        </div>
+    </section>
+    <section >
+        <div class="box">
+        <h1><b>Step 6:</b> How to commit the changes</h1> <br>
+        <p>git commit -m "commit message"</p>
+        </div>
+    </section>
+    <section >
+        <div class="box">
+        <h1><b>Step 7:</b> How to add the changes</h1> <br>
+        <p>git add .</p>
+        </div>
+    </section>
+    <section >
+        <div class="box">
+        <h1><b>Step 8:</b> How to push your local changes to the remote repo</h1> <br>
+        <p>git push remoterepo</p>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SriKishore.</p>
+    </footer>
+</body>
+</html>
